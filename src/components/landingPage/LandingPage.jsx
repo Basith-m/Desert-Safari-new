@@ -1,14 +1,16 @@
 import React from 'react'
 import './landingPage.css'
+import landingVideo from '../../assets/video.mp4'
 
 const LandingPage = () => {
   return (
     <div className='text-dark LandingPage'>
       <video
-              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" // Replace with the actual video source path
+              src={landingVideo} // Replace with the actual video source path
               className="w-100 h-100"
               autoPlay
               muted
+              loop
               // playsInline
             ></video>
     </div>
