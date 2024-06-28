@@ -6,6 +6,7 @@
     overflow: hidden;
   }
   
+
   .LandingPage video {
     position: absolute;
     top: 0;
@@ -14,4 +15,16 @@
     height: 100%;
     object-fit: cover;
     z-index: -1; /* Ensure video is behind any content */
-  }
+}
+
+/* Dark overlay */
+.LandingPage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Adjust opacity to make it darker or lighter */
+    z-index: 0; /* Make sure this is above the video but below any other content */
+}
