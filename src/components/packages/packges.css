@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-.packages{
+.packages {
   margin-top: 22rem;
 }
 
@@ -15,4 +15,10 @@
   color: goldenrod;
   text-align: center;
   font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .packages {
+    margin-top: 0;
+  }
 }
