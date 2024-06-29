@@ -7,12 +7,12 @@ import Packages from './components/packages/Packages';
 
 function App() {
   return (
-    <div style={{height:'150vh'}}>
+    <>
       <Header />
       <LandingPage />
       <Packages />
       <Footer />
-    </div>
+    </>
   );
 }
 

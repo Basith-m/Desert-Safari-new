@@ -2,16 +2,19 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
 import './cardSlider.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Pagination } from 'swiper/modules';
 
 const CardSlider = () => {
     return (
         <Swiper
             navigation={true}
-            modules={[Navigation]}
+            pagination={true}
+            modules={[Navigation, Pagination]}
             spaceBetween={10}
             className="mySwiper"
             breakpoints={{
