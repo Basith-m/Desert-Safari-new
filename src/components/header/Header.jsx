@@ -25,11 +25,11 @@ const Header = () => {
 
 
     return (
-        <div className={`header ${scrollPosition > 50 ? 'scrolled' : ''}`}>
+        <div className={`header ${scrollPosition > 50 ? 'scrolled' : ''} ${isToggled ? 'toggled' : ''}`}>
             <Navbar expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#home">
-                        <img width={"200px"} src={Logo} alt="Deset Safari Logo" />
+                        <img width={"180px"} src={Logo} alt="Deset Safari Logo" />
                     </Navbar.Brand>
                     <div className='d-flex align-items-center ms-auto gap-2 order-lg-2'>
                         <div className='watsp-lg gap-2 contact-icon'>
@@ -48,11 +48,11 @@ const Header = () => {
                     </div>
                     <Navbar.Collapse id="basic-navbar-nav" className='order-lg-1'>
                         <Nav className="mx-auto d-flex gap-3">
-                            <Nav.Link style={{ borderRadius: '20px' }} href="#home" className='fw-medium nav-item px-3'>Home</Nav.Link>
-                            <Nav.Link style={{ borderRadius: '20px' }} href="#link" className='fw-medium nav-item px-3'>Desert Safari</Nav.Link>
-                            <Nav.Link style={{ borderRadius: '20px' }} href="#home" className='fw-medium nav-item px-3'>Buggy Tours</Nav.Link>
-                            <Nav.Link style={{ borderRadius: '20px' }} href="#link" className='fw-medium nav-item px-3'>About Us</Nav.Link>
-                            <Nav.Link style={{ borderRadius: '20px' }} href="#home" className='fw-medium nav-item px-3'>Contact</Nav.Link>
+                            <Nav.Link style={{ borderRadius: '20px' }} href="#home" className='fw-medium nav-item px-3'>HOME</Nav.Link>
+                            <Nav.Link style={{ borderRadius: '20px' }} href="#link" className='fw-medium nav-item px-3'>DESERT SAFARI</Nav.Link>
+                            <Nav.Link style={{ borderRadius: '20px' }} href="#home" className='fw-medium nav-item px-3'>BUGGY TOURS</Nav.Link>
+                            <Nav.Link style={{ borderRadius: '20px' }} href="#link" className='fw-medium nav-item px-3'>ABOUT US</Nav.Link>
+                            <Nav.Link style={{ borderRadius: '20px' }} href="#home" className='fw-medium nav-item px-3'>CONTACT</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

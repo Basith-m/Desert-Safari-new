@@ -1,30 +1,64 @@
-/* landingPage.css */
-.LandingPage {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-
-  .LandingPage video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Ensure video is behind any content */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 94vh; /* Make the banner full height */
+  overflow: hidden;
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); */
 }
 
-/* Dark overlay */
-.LandingPage::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Adjust opacity to make it darker or lighter */
-    z-index: 0; /* Make sure this is above the video but below any other content */
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the video behind other content */
+}
+
+.banner-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.banner-content p {
+  font-size: large;
+  color: #ffffffcc;
+}
+
+.two-cards {
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.second-align{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .two-cards {
+    position: relative;
+    top: 30rem;
+    left: 50%;
+   
+  }
+ 
 }

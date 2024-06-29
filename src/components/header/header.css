@@ -7,7 +7,8 @@
   transition: background-color 0.3s ease;
 }
 
-.header.scrolled {
+.header.scrolled,
+.header.toggled {
   background-color: rgba(0, 0, 0, 0.6); /* Adjust the color and opacity as needed */
   backdrop-filter: blur(10px);
 }
@@ -32,12 +33,13 @@
 
 .nav-item {
   color: #ffff !important;
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
+  letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out !important;
 }
 
 .nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Change to your desired color */
+  background-color: rgba(255, 255, 255, 0.2); /* Change to your desired color */
 }
 
 .nav-icon {
@@ -60,7 +62,7 @@
   }
 
   .nav-item {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
   }
 
   .contact-icon {
