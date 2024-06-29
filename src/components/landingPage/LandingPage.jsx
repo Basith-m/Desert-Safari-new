@@ -1,10 +1,10 @@
-import React from 'react'
-import './landingPage.css'
-import landingVideo from '../../assets/video.mp4'
-import { Col, Container, Row } from 'react-bootstrap'
-import LandingPageCard from '../landingPageCard/LandingPageCard'
-import card1 from '../../assets/IMG_1452.jpg'
-import card2 from '../../assets/safari-car.jpg'
+import React from "react";
+import "./landingPage.css";
+import landingVideo from "../../assets/video.mp4";
+import { Col, Container, Row } from "react-bootstrap";
+import LandingPageCard from "../landingPageCard/LandingPageCard";
+import card1 from "../../assets/IMG_1452.jpg";
+import card2 from "../../assets/safari-car.jpg";
 
 const LandingPage = () => {
   return (
@@ -16,9 +16,7 @@ const LandingPage = () => {
         </video>
         <div className="banner-content">
           <p>SAFARI AND BUGGY TOURS IN DUBAI</p>
-
-          <h1>From Dunes to Dreams</h1>
-          <p>Buggy Thrills, Safari Chills, and Camping Under Dubai Skies.</p>
+          <h1>From Dunes to Delight</h1>
         </div>
       </div>
       <div className="two-cards">
@@ -44,7 +42,7 @@ const LandingPage = () => {
         </Container>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
