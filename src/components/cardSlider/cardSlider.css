@@ -49,3 +49,36 @@
     font-size: 22px;
     font-weight: 600;
 }
+
+.tripCost-text {
+    background-color: lightgray;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.tripCost-text span {
+   font-size: 1rem; 
+   font-weight: bold;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-height {
+    height: 540px !important; /* Adjust the height as per your design needs */
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-img {
+    transition: transform 0.3s ease-in-out;
+    height: fit-content;
+}
+
+.card .card-img:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+}

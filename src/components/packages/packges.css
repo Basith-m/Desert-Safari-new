@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 .packages {
-  margin-top: 24rem;
+  margin-top: 22rem;
 }
 
 .profile {
   line-height: 2rem;
   word-spacing: 2px;
   letter-spacing: 0.5px;
-  font-size: 1.2rem;
-  background-color: lavender;
 }
 
 .slider {

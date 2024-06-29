@@ -1,0 +1,11 @@
+.tripCost-text {
+    background-color: lightgray;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.tripCost-text span {
+   font-size: 1rem; 
+   font-weight: bold;
+}
