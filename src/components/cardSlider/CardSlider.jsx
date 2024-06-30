@@ -32,18 +32,18 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                         spaceBetween={10}
                         className="mySwiper"
                         breakpoints={{
-                            // when window width is >= 768px
-                            768: {
+                            // when window width is >= 662px
+                            662: {
                                 slidesPerView: 1,
                                 slidesPerGroup: 1,
                             },
-                            // when window width is >= 992px
-                            992: {
+                            // when window width is >= 768px
+                            768: {
                                 slidesPerView: 2,
                                 slidesPerGroup: 2,
                             },
                             // when window width is >= 1200px
-                            1200: {
+                            992: {
                                 slidesPerView: 3,
                                 slidesPerGroup: 1,
                             },
@@ -88,18 +88,18 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                         spaceBetween={10}
                         className="mySwiper"
                         breakpoints={{
-                            // when window width is >= 768px
-                            768: {
+                            // when window width is >= 662px
+                            662: {
                                 slidesPerView: 1,
                                 slidesPerGroup: 1,
                             },
-                            // when window width is >= 992px
-                            992: {
+                            // when window width is >= 768px
+                            768: {
                                 slidesPerView: 2,
                                 slidesPerGroup: 2,
                             },
                             // when window width is >= 1200px
-                            1200: {
+                            992: {
                                 slidesPerView: 3,
                                 slidesPerGroup: 1,
                             },
@@ -145,18 +145,18 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                         spaceBetween={10}
                         className="mySwiper"
                         breakpoints={{
-                            // when window width is >= 768px
-                            768: {
+                            // when window width is >= 662px
+                            662: {
                                 slidesPerView: 1,
                                 slidesPerGroup: 1,
                             },
-                            // when window width is >= 992px
-                            992: {
+                            // when window width is >= 768px
+                            768: {
                                 slidesPerView: 2,
                                 slidesPerGroup: 2,
                             },
                             // when window width is >= 1200px
-                            1200: {
+                            992: {
                                 slidesPerView: 3,
                                 slidesPerGroup: 1,
                             },

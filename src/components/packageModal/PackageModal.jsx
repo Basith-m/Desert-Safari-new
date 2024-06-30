@@ -15,7 +15,7 @@ const PackageModal = ({ show, setShow, item }) => {
             </Modal.Header>
             <Modal.Body>
                 <div className='d-flex flex-column gap-3'>
-                    <img src={dummy} alt="" />
+                    <img className='w-100' src={dummy} alt="" />
                     <ul>
                         {item?.services.map((service, idx) => (
                             <li key={idx}>{service}</li>

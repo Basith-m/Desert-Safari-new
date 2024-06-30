@@ -54,7 +54,9 @@
     background-color: lightgray;
     width: max-content;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
+    border-radius: 40px !important;
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    box-sizing: border-box;
 }
 
 .tripCost-text span {
@@ -77,8 +79,42 @@
 .card .card-img {
     transition: transform 0.3s ease-in-out;
     height: fit-content;
+    width: 100%;
 }
 
 .card .card-img:hover {
     transform: scale(1.05); /* Scale up the image on hover */
+}
+
+
+@media (max-width: 350px) {
+    .tripCost-text {
+        padding: 0.3rem 0.5rem; /* Reduce padding */
+        font-size: 0.9rem; /* Adjust font size if necessary */
+        width: 100%; /* Ensure it takes the full width */
+    }
+
+    .swiper-slide {
+        padding: 0 5px; /* Reduce padding to ensure proper alignment */
+    }
+}
+
+/* Add media query for screens smaller than 350px */
+@media (max-width: 350px) {
+    .tripCost-text {
+        padding: 0.3rem 0.5rem; /* Reduce padding */
+        width: 100%; /* Ensure it takes the full width */
+    }
+
+    .tripCost-text span {
+        font-size: 0.9rem !important; 
+    }
+
+    .swiper-slide {
+        padding: 0 5px; /* Reduce padding to ensure proper alignment */
+    }
+
+    .card-height {
+        height: auto !important;
+    }
 }

@@ -11,7 +11,7 @@ function Review() {
       {/* 1 Container */}
       <Container className="review-container   w-75 mt-5 mb-3">
         <div className="d-flex flex-wrap align-items-center justify-content-between">
-          <div className="d-flex align-items-center mb-3 mb-md-0">
+          <div className="d-flex flex-wrap align-items-center mb-3 mb-md-0">
             <span className="rating-text ms-3 me-2">Rating</span>
             <span className="rating-text me-2">Rating</span>
             <span className="rating-stars me-2">★★★★★</span>
