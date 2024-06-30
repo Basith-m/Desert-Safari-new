@@ -1,15 +1,14 @@
 .slider {
-    padding: 3rem 0px;
-    position: relative;
+  padding: 3rem 0px;
+  position: relative;
 }
 
 .swiper {
-    width: calc(100% - 40px);
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 20px 40px;
+  width: calc(100% - 40px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px 40px;
 }
-
 
 .swiper-slide {
   font-size: 18px;
@@ -29,92 +28,93 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    width: 20px;
-    height: 20px;
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for centering */
-    z-index: 10; /* Ensure buttons are above other elements */
+  width: 20px;
+  height: 20px;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  z-index: 10; /* Ensure buttons are above other elements */
 }
 
 .swiper-button-next {
-    right: 0; /* Position to the right */
+  right: 0; /* Position to the right */
 }
 
 .swiper-button-prev {
-    left: 0; /* Position to the left */
+  left: 0; /* Position to the left */
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .tripCost-text {
-    background-color: lightgray;
-    width: max-content;
-    padding: 0.5rem 1rem;
-    border-radius: 40px !important;
-    max-width: 100%; /* Ensure it doesn't exceed the screen width */
-    box-sizing: border-box;
+  background-color: lightgray;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 40px !important;
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  box-sizing: border-box;
 }
 
 .tripCost-text span {
-   font-size: 1rem; 
-   font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .card {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .card-height {
-    height: 540px !important; /* Adjust the height as per your design needs */
-    display: flex;
-    flex-direction: column;
+  height: 540px !important; /* Adjust the height as per your design needs */
+  display: flex;
+  flex-direction: column;
 }
 
 .card .card-img {
-    transition: transform 0.3s ease-in-out;
-    height: fit-content;
-    width: 100%;
+  transition: transform 0.3s ease-in-out;
+  height: fit-content;
+  width: 100%;
 }
 
 .card .card-img:hover {
-    transform: scale(1.05); /* Scale up the image on hover */
+  transform: scale(1.05); /* Scale up the image on hover */
 }
 
-
 @media (max-width: 350px) {
-    .tripCost-text {
-        padding: 0.3rem 0.5rem; /* Reduce padding */
-        font-size: 0.9rem; /* Adjust font size if necessary */
-        width: 100%; /* Ensure it takes the full width */
-    }
+  .tripCost-text {
+    padding: 0.3rem 0.5rem; /* Reduce padding */
+    font-size: 0.9rem; /* Adjust font size if necessary */
+    width: 100%; /* Ensure it takes the full width */
+  }
 
-    .swiper-slide {
-        padding: 0 5px; /* Reduce padding to ensure proper alignment */
-    }
+  .swiper-slide {
+    padding: 0 5px; /* Reduce padding to ensure proper alignment */
+  }
+}
+
+@media (max-width: 662px) {
+  .card-height {
+    height: auto !important;
+  }
 }
 
 /* Add media query for screens smaller than 350px */
 @media (max-width: 350px) {
-    .tripCost-text {
-        padding: 0.3rem 0.5rem; /* Reduce padding */
-        width: 100%; /* Ensure it takes the full width */
-    }
+  .tripCost-text {
+    padding: 0.3rem 0.5rem; /* Reduce padding */
+    width: 100%; /* Ensure it takes the full width */
+  }
 
-    .tripCost-text span {
-        font-size: 0.9rem !important; 
-    }
+  .tripCost-text span {
+    font-size: 0.9rem !important;
+  }
 
-    .swiper-slide {
-        padding: 0 5px; /* Reduce padding to ensure proper alignment */
-    }
-
-    .card-height {
-        height: auto !important;
-    }
+  .swiper-slide {
+    padding: 0 5px; /* Reduce padding to ensure proper alignment */
+  }
 }
