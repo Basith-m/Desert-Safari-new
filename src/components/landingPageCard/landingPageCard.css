@@ -5,16 +5,18 @@
   width: 89%;
 }
 
-.card-image-container {
+.card-image-wrapper {
   position: relative;
-  overflow: hidden; /* Ensure content within the shape */
-  /* border-radius: 10% / 50%; */
-  border-radius: 5% ;
+  border-radius: 5%;
+  overflow: hidden;
 }
 
 .card-image-container {
-  position: relative;
+  transition: transform 0.5s ease; /* Smooth transition */
+}
 
+.card-image-container:hover {
+  transform: scale(1.1); /* Zoom in on hover */
 }
 
 .card-image {

@@ -1,30 +1,51 @@
 import React from "react";
-import './review.css'
-import { Container, Button } from "react-bootstrap";
+import "./review.css";
+import { Container } from "react-bootstrap";
 import { Card } from "react-bootstrap";
+import google from '../../assets/google.png'
 
 function Review() {
   // the card data
 
   return (
-    <>
-      {/* 1 Container */}
-      <Container className="review-container   w-75 mt-5 mb-3">
-        <div className="d-flex flex-wrap align-items-center justify-content-between">
-          <div className="d-flex flex-wrap align-items-center mb-3 mb-md-0">
-            <span className="rating-text ms-3 me-2">Rating</span>
-            <span className="rating-text me-2">Rating</span>
-            <span className="rating-stars me-2">★★★★★</span>
-            <span className="rating-score ">5.0</span>
+    <div className="review">
+      <Container className="mb-3">
+        <div className="d-flex flex-column gap-2 justify-content-center align-items-center">
+          <div className="me-auto w-100 mt-3">
+            <h2 className="text-white">CUSTOMER REVIEW</h2>
+            <hr className="text-secondary" />
           </div>
-          <Button variant="success" className="review-button">
-            Write review
-          </Button>
+          <Card
+            className="m-2 first-review-container"
+            style={{ border: "none" }}
+          >
+            <Card.Body className="text-center">
+              <div className="title-container">
+                <img
+                  src={google}
+                  alt="Google Icon"
+                  className="google-icon"
+                />
+                <h2 className="title">Excellent</h2>
+              </div>
+              <div className="stars">
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
+              </div>
+              <Card.Text className="description">
+                Based on all reviews,
+              </Card.Text>
+              <a href="#" className="link">
+                See all reviews here
+              </a>
+            </Card.Body>
+          </Card>
         </div>
       </Container>
-      {/*  end Container */}
 
-      {/* 2 Container */}
       <Container className="mb-3">
         <div className="d-flex flex-wrap justify-content-center">
           <Card
@@ -33,7 +54,6 @@ function Review() {
           >
             <Card.Body>
               <span className="rating-stars">★★★★</span>
-
               <Card.Text className="mt-2">
                 <span className="fw-bolder">Best Time I Had In My Trip -</span>
                 Some quick example text to build on the card title and make up
@@ -60,7 +80,6 @@ function Review() {
           >
             <Card.Body>
               <span className="rating-stars">★★★★</span>
-
               <Card.Text className="mt-2">
                 <span className="fw-bolder">Amazing Experience - </span>
                 Some quick example text to build on the card title and make up
@@ -87,7 +106,6 @@ function Review() {
           >
             <Card.Body>
               <span className="rating-stars">★★★★</span>
-
               <Card.Text className="mt-2">
                 <span className="fw-bolder">Amazing - </span>
                 Some quick example text to build on the card title and make up
@@ -110,17 +128,15 @@ function Review() {
           </Card>
         </div>
       </Container>
-      {/* end Container */}
 
-      {/* 3 Container */}
-      <Container className="review-container w-75  mb-3">
+      <Container className="review-container w-75 mb-3">
         <div className="text-center fw-bolder">
           <span>MORE REVIEWS ON TRIP </span>
         </div>
       </Container>
-      
-       {/* end Container */}
-    </>
+
+      {/* end Container */}
+    </div>
   );
 }
 

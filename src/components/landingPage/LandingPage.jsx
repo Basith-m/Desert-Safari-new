@@ -3,8 +3,8 @@ import "./landingPage.css";
 import landingVideo from "../../assets/video.mp4";
 import { Col, Container, Row } from "react-bootstrap";
 import LandingPageCard from "../landingPageCard/LandingPageCard";
-import card1 from "../../assets/IMG_1452.jpg";
-import card2 from "../../assets/safari-car.jpg";
+import card2 from "../../assets/buggy.jpg";
+import card1 from "../../assets/IMG_6922.jpg";
 
 const LandingPage = () => {
   return (
