@@ -8,7 +8,7 @@ function Review() {
   // the card data
 
   return (
-    <div className="review">
+    <section className="review">
       <Container className="mb-3">
         <div className="d-flex flex-column gap-2 justify-content-center align-items-center">
           <div className="me-auto w-100 mt-3">
@@ -136,7 +136,7 @@ function Review() {
       </Container>
 
       {/* end Container */}
-    </div>
+    </section>
   );
 }
 

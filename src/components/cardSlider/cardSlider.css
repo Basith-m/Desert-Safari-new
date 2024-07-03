@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 .slider {
   padding: 3rem 0px;
   position: relative;
@@ -11,7 +13,6 @@
 }
 
 .swiper-slide {
-  font-size: 18px;
   background: #fff;
   display: flex;
   align-items: center;
@@ -50,7 +51,7 @@
 }
 
 .tripCost-text {
-  background-color: lightgray;
+  background-color: rgb(246, 240, 240) !important;
   width: max-content;
   padding: 0.5rem 1rem;
   border-radius: 40px !important;
@@ -70,7 +71,7 @@
 }
 
 .card-height {
-  height: 540px !important; /* Adjust the height as per your design needs */
+  height: 490px !important; /* Adjust the height as per your design needs */
   display: flex;
   flex-direction: column;
 }
@@ -84,6 +85,30 @@
 .card .card-img:hover {
   transform: scale(1.05); /* Scale up the image on hover */
 }
+
+
+.small-text {
+  font-size: 0.9rem; /* Adjust the size as needed */
+
+}
+
+.card-title {
+  font-family: "Noto Serif", serif;
+}
+
+@media (max-width: 768px) {
+  .small-text {
+    font-size: 0.8rem; /* Adjust the size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .small-text {
+    font-size: 0.7rem; /* Further adjust the size for extra small screens */
+  }
+}
+
+
 
 @media (max-width: 350px) {
   .tripCost-text {

@@ -1,4 +1,7 @@
 import './App.css';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Custom from './components/custom/Custom';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import LandingPage from './components/landingPage/LandingPage';
@@ -12,6 +15,9 @@ function App() {
       <Header />
       <LandingPage />
       <Packages />
+      <Custom /> 
+      <About />
+      <Contact />
       <Review />
       <Footer />
     </>

@@ -7,7 +7,7 @@ import { cityTours } from './packageData'
 
 const Packages = () => {
     return (
-        <div className='packages'>
+        <section className='packages'>
             <div className='profile pt-5 pb-2'>
                 <div className='container text-center'>
                     <span>
@@ -36,7 +36,7 @@ const Packages = () => {
                     <CardSlider cityTours={cityTours} />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

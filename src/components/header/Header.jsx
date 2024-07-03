@@ -25,11 +25,11 @@ const Header = () => {
 
 
     return (
-        <div className={`header ${scrollPosition > 50 ? 'scrolled' : ''} ${isToggled ? 'toggled' : ''}`}>
+        <header className={`header ${scrollPosition > 50 ? 'scrolled' : ''} ${isToggled ? 'toggled' : ''}`}>
             <Navbar expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#home">
-                        <img width={"180px"} className='logo' src={Logo} alt="Deset Safari Logo" />
+                        <img width={"160px"} className='logo' src={Logo} alt="Deset Safari Logo" />
                     </Navbar.Brand>
                     <div className='d-flex align-items-center ms-auto gap-2 order-lg-2'>
                         <div className='watsp-lg gap-2 contact-icon'>
@@ -57,7 +57,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </header>
     );
 }
 

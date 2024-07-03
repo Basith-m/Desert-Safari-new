@@ -5,7 +5,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
 import './cardSlider.css';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Pagination } from 'swiper/modules';
 import dummy from '../../assets/safari-car.jpg'
@@ -55,16 +54,19 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                                     <Card style={{ width: '20rem' }} className='card-height' onClick={() => handleShow(item)}>
                                         <Card.Img className='card-img' variant="top" src={dummy} />
                                         <Card.Body>
-                                            <Card.Title>{item.title}</Card.Title>
+                                            <Card.Title className='card-title'>{item.title}</Card.Title>
                                             <Card.Text className='pt-2'>
-                                                <p className='opacity-75'>
+                                                <p className='opacity-75 small-text'>
                                                     <ul>
                                                         {item.services.slice(0, 2).map((service, idx) => (
                                                             <li key={idx}>{service}</li>
                                                         ))}
                                                     </ul>
                                                     {item.services.length > 2 && (
-                                                        <Button variant="link">View Full Details</Button>
+                                                        <div className='d-flex align-items-center justify-content-center gap-3 text-primary fw-bolder'>
+                                                            <span>View Full Details</span>
+                                                            <i class="fa-solid fa-right-long fa-beat-fade"></i>
+                                                        </div>
                                                     )}
                                                 </p>
                                             </Card.Text>
@@ -113,14 +115,17 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                                         <Card.Body>
                                             <Card.Title>{item.title}</Card.Title>
                                             <Card.Text className='pt-2'>
-                                                <p className='opacity-75'>
+                                                <p className='opacity-75 small-text'>
                                                     <ul>
                                                         {item.services.slice(0, 2).map((service, idx) => (
                                                             <li key={idx}>{service}</li>
                                                         ))}
                                                     </ul>
                                                     {item.services.length > 2 && (
-                                                        <Button variant="link">View Full Details</Button>
+                                                        <div className='d-flex align-items-center justify-content-center gap-3 text-primary fw-bolder'>
+                                                            <span>View Full Details</span>
+                                                            <i class="fa-solid fa-right-long fa-beat-fade"></i>
+                                                        </div>
                                                     )}
                                                 </p>
                                             </Card.Text>
@@ -170,14 +175,17 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                                         <Card.Body className='d-flex flex-column align-items-center'>
                                             <Card.Title className='me-auto'>{item.title}</Card.Title>
                                             <Card.Text className='pt-2'>
-                                                <p className='opacity-75'>
+                                                <p className='opacity-75 small-text'>
                                                     <ul>
                                                         {item.services.slice(0, 2).map((service, idx) => (
                                                             <li key={idx}>{service}</li>
                                                         ))}
                                                     </ul>
                                                     {item.services.length > 2 && (
-                                                        <Button variant="link">View Full Details</Button>
+                                                        <div className='d-flex align-items-center justify-content-center gap-3 text-primary fw-bolder'>
+                                                            <span>View Full Details</span>
+                                                            <i class="fa-solid fa-right-long fa-beat-fade"></i>
+                                                        </div>
                                                     )}
                                                 </p>
                                             </Card.Text>

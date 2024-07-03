@@ -104,10 +104,16 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 130px !important;
+  }
+}
+
 
 @media only screen and (max-width: 352px) {
   .logo {
-    width: 140px !important;
+    width: 120px !important;
   }
 
   .nav-icon * {
