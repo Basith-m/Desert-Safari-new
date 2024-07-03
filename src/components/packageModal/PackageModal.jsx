@@ -11,7 +11,7 @@ const PackageModal = ({ show, setShow, item }) => {
     return (
         <Modal show={show} onHide={handleClose} size="lg" >
             <Modal.Header closeButton>
-                <Modal.Title>{item?.title}</Modal.Title>
+                <Modal.Title className='card-title'>{item?.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className='d-flex flex-column gap-3'>
@@ -25,7 +25,7 @@ const PackageModal = ({ show, setShow, item }) => {
                         item?.timings &&
                         <div className='d-flex flex-column gap-2'>
                             <h5>Timings</h5>
-                            <ul>
+                            <ul className='small-text'>
                                 {item?.timings?.map((service, idx) => (
                                     <li key={idx}>{service}</li>
                                 ))}
