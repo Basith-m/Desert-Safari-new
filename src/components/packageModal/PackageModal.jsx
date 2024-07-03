@@ -22,7 +22,7 @@ const PackageModal = ({ show, setShow, item }) => {
                         ))}
                     </ul>
                     {
-                        item?.timing &&
+                        item?.timings &&
                         <div className='d-flex flex-column gap-2'>
                             <h5>Timings</h5>
                             <ul>

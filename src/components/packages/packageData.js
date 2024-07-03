@@ -286,7 +286,7 @@ export const cityTours = [
             "Dubai Marina Walk & Yacht club",
             "Dubai Museum"
         ],
-        timing: "Time Pick-Up / Drop: 08:00 AM - 06:00 PM, All Days Are Operational"
+        timings: ["Time Pick-Up / Drop: 08:00 AM - 06:00 PM, All Days Are Operational"]
     },
     {
         title: "Abu Dhabi City Tour",
@@ -299,7 +299,7 @@ export const cityTours = [
             "Heritage Village",
             "Corniche"
         ],
-        timing: "Time Pick-Up / Drop: 08:00 AM - 06:00 PM, All Days Are Operational"
+        timings: ["Time Pick-Up / Drop: 08:00 AM - 06:00 PM, All Days Are Operational"]
     },
     {
         title: "Creek Dhow Cruise Tour",
@@ -317,7 +317,7 @@ export const cityTours = [
             "Smoking Area At Upper Deck",
             "Separate Toilet Facilities"
         ],
-        timing: ["Boarding Time : 6.45 PM, Return after two hours of sailing on the Dubai Marina Bay."]
+        timings: ["Boarding Time : 6.45 PM, Return after two hours of sailing on the Dubai Marina Bay."]
     }
     // Add more tour options as needed
 ];
