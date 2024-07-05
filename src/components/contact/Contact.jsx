@@ -54,16 +54,7 @@ const Contact = () => {
               className="col-md-5 shadow p-4">
               <div className="d-flex flex-column gap-4">
                 <h4 className="text-white ">Desert Safari Info</h4>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250730.87581680724!2d75.82969515288241!3d10.91266969093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b6b2e196b3ad%3A0x16a70872d268ef22!2sTirur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1720188805459!5m2!1sen!2sin"
-                  height="250"
-                  style={{ border: "0px" }}
-                  allowfullscreen=""
-                  className="rounded"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="map"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.6418960369415!2d55.27151019999999!3d25.1815668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69671fccfefd%3A0xaff6bd86dd6e5642!2sDesert%20safari%20Tourhub!5e0!3m2!1sen!2sin!4v1720198475654!5m2!1sen!2sin" width="400" height="300" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map" className="w-100 rounded"></iframe>
                 <div className="d-flex flex-column p-2 gap-3">
                   <div className="d-flex align-items-center gap-2">
                     <div className="bg-white py-1 px-2 rounded-circle">
