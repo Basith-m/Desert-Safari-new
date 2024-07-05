@@ -1,6 +1,6 @@
 import React from "react";
 import "./landingPage.css";
-import Banner from '../../assets/video.mp4'
+import Banner from '../../assets/Deset Safari video.mp4'
 import { Col, Container, Row } from "react-bootstrap";
 import LandingPageCard from "../landingPageCard/LandingPageCard";
 import card2 from "../../assets/buggy.jpg";

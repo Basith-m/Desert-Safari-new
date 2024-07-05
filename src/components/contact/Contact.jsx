@@ -1,53 +1,95 @@
-import React from 'react'
+import React from "react";
 import { BsBuildingsFill } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
 import { SiWhatsapp } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-import './contact.css'
-
 
 const Contact = () => {
   return (
-    <section className='contact'>
+    <div className="contact py-4">
       <div className="container">
-        <div className='contact-container d-flex flex-column align-items-center justify-content-center gap-3'>
+        <div className="contact-container d-flex flex-column align-items-center justify-content-center gap-3">
           <h2>CONTACT US</h2>
-          <span className='text-secondary'>CALL OR WHATSAPP  <span className='text-primary'>+971 585879766 </span>  FOR BOOKING DESERT SAFARI DEALS OTHER INQUIRIES 24/7 SUPPORT</span>
-          <div className='row py-3 d-flex justify-content-center gap-3'>
-            <div className="col-md-5 bg-white  p-3 shadow rounded">
+          <span className="text-secondary px-3">
+            Call or WhatsApp <span className="text-primary"> +971 585879766 </span> For Booking
+            Desert Safari Deals Other Inquires 24/7 Support
+          </span>
+          <div className="row py-3 d-flex justify-content-center gap-3 w-100">
+            <div className="col-md-5 d-flex flex-column justify-content-center gap-3  p-5 shadow">
+              <h4>Get In Touch</h4>
               <form className="d-flex flex-column gap-3 ">
-                <label>Name</label>
-                <input type="text" name="user_name" className="form-control" required />
-                
-                <label>Email</label>
-                <input type="email" name="user_email" className="form-control" required />
-                
-                <label>Message</label>
-                <textarea name="message" className="form-control" required style={{ height: '150px' }} />
-                
-                <input type="submit" value="Send" className="btn btn-primary mt-3" />
+                {/* <label>Name</label> */}
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="Name"
+                  className="form-control"
+                  required
+                />
+                {/* <label>Email</label> */}
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Email"
+                  className="form-control"
+                  required
+                />
+                {/* <label>Message</label> */}
+                <textarea
+                  name="message"
+                  className="form-control"
+                  required
+                  placeholder="Message"
+                  style={{ height: "150px" }}
+                />
+                <input
+                  type="submit"
+                  value="Send"
+                  className="btn btn-primary mt-3 btn-grid"
+                />
               </form>
             </div>
-            <div className="col-md-5 bg-white rounded shadow py-4 px-4">
-              <div className='d-flex flex-column gap-3'>
-                <h4>Desert Safari Info</h4>
-                <p className='text-secondary'>We are dedicated to providing the best possible experience for our users. As a consequence, we’ve dedicated this page to providing all of the contact information you’ll need. We’d be happy to help you make a reservation, answer a question, or provide feedback. We are delighted to offer the greatest desert safari services in the area, and we want you to have an unforgettable trip. If you have any questions, please contact us. We want to welcome you and provide you with the opportunity to go on your own desert safari for an extraordinary experience. You’ve come to the right place if you’re a first-time visitor, a returning client, or simply want to learn more about the wonderful experiences we offer.</p>
-                <div className='d-flex flex-column gap-2'>
-                  <div className='d-flex align-items-center gap-2'>
-                    <BsBuildingsFill />
-                    <span>Deira Dubai United Arab Emirates</span>
+            <div
+              style={{ backgroundColor: "rgb(41, 23, 59)" }}
+              className="col-md-5 shadow p-4">
+              <div className="d-flex flex-column gap-4">
+                <h4 className="text-white ">Desert Safari Info</h4>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250730.87581680724!2d75.82969515288241!3d10.91266969093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b6b2e196b3ad%3A0x16a70872d268ef22!2sTirur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1720188805459!5m2!1sen!2sin"
+                  height="250"
+                  style={{ border: "0px" }}
+                  allowfullscreen=""
+                  className="rounded"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="map"
+                ></iframe>
+                <div className="d-flex flex-column p-2 gap-3">
+                  <div className="d-flex align-items-center gap-2">
+                    <div className="bg-white py-1 px-2 rounded-circle">
+                      <BsBuildingsFill className="text-black" />
+                    </div>
+                    <span className="text-white">
+                      Deira Dubai United Arab Emirates
+                    </span>
                   </div>
-                  <div className='d-flex align-items-center gap-2'>
-                    <FaPhoneAlt />
-                    <span>+971 585879766</span>
+                  <div className="d-flex align-items-center gap-2">
+                    <div className="bg-white py-1 px-2 rounded-circle">
+                      <FaPhoneAlt className="text-black" />
+                    </div>
+                    <span className="text-white">+971 585879766</span>
                   </div>
-                  <div className='d-flex align-items-center gap-2'>
-                    <SiWhatsapp />
-                    <span>+971 585879766</span>
+                  <div className="d-flex align-items-center gap-2">
+                    <div className="bg-white py-1 px-2 rounded-circle">
+                      <SiWhatsapp className="text-black" />
+                    </div>
+                    <span className="text-white">+971 585879766</span>
                   </div>
-                  <div className='d-flex align-items-center gap-2'>
-                    <MdEmail />
-                    <span>Info@desertsafarime.com</span>
+                  <div className="d-flex align-items-center gap-2">
+                    <div className="bg-white py-1 px-2 rounded-circle">
+                      <MdEmail className="text-black" />
+                    </div>
+                    <span className="text-white">Info@desertsafarime.com</span>
                   </div>
                 </div>
               </div>
@@ -55,8 +97,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

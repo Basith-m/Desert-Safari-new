@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 .slider {
   padding: 3rem 0px;
@@ -62,6 +62,7 @@
 .tripCost-text span {
   font-size: 1rem;
   font-weight: bold;
+  font-family: "El Messiri", sans-serif;
 }
 
 .card {

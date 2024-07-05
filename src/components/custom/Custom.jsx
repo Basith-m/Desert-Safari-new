@@ -4,7 +4,7 @@ import './custom.css'
 const Custom = () => {
   return (
     <section className="mx-2 mb-5">
-      <div className="custom-container container text-center  text-white p-5 border border-2 rounded shadow">
+      <div className="custom-container container text-center  text-white p-5 border border-2 rounded border-danger shadow">
         <h2 className="font-weight-bold text-black mb-4">
           Customize Your Dream Adventures
         </h2>
@@ -13,7 +13,7 @@ const Custom = () => {
           personalize their experiences, ensuring tailored adventures that cater
           to individual preferences and desires.
         </p>
-        <button className="btn btn-primary">BOOK YOUR TRIP</button>
+        <button className="btn btn-grid">BOOK YOUR TRIP</button>
       </div>
     </section>
   )
