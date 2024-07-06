@@ -1,3 +1,7 @@
+body {
+  background-color: #fffafa !important;
+}
+
 .btn-grid {
   background-image: linear-gradient(
     to right,

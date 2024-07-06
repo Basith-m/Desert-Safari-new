@@ -23,13 +23,13 @@ const Contact = () => {
       <div className="container">
         <div className="contact-container d-flex flex-column align-items-center justify-content-center gap-3">
           <h2>CONTACT US</h2>
-          <span className="text-secondary px-3">
-            Call or WhatsApp{" "}
+          <span style={{letterSpacing:'1px', wordSpacing:'2px'}} className="text-secondary px-3">
+            Call or WhatsApp
             <span className="text-primary"> +971 585879766 </span> For Booking
             Desert Safari Deals Other Inquires 24/7 Support
           </span>
           <div className="row py-3 d-flex justify-content-center gap-3 w-100">
-            <div className="col-md-5 d-flex flex-column justify-content-center gap-3  p-5 shadow">
+            <div className="col-md-5 bg-white d-flex flex-column justify-content-center gap-3  p-5 shadow">
               <h4>Get In Touch</h4>
 
               <form
