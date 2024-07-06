@@ -51,7 +51,7 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                         {
                             desertSafari.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <Card style={{ width: '20rem' }} className='card-height shadow border border-2 border-danger p-2' onClick={() => handleShow(item)}>
+                                    <Card style={{ width: '20rem' }} className='card-height shadow border border-2 border-danger p-2 rounded-4' onClick={() => handleShow(item)}>
                                         <Card.Img className='card-img' variant="top" src={dummy} />
                                         <Card.Body>
                                             <Card.Title className='card-title'>{item.title}</Card.Title>
@@ -110,7 +110,7 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                         {
                             buggyTours.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <Card style={{ width: '20rem' }} className='card-height shadow border border-2 border-danger p-2' onClick={() => handleShow(item)}>
+                                    <Card style={{ width: '20rem' }} className='rounded-4 card-height shadow border border-2 border-danger p-2' onClick={() => handleShow(item)}>
                                         <Card.Img className='card-img' variant="top" src={dummy} />
                                         <Card.Body>
                                             <Card.Title>{item.title}</Card.Title>
@@ -170,7 +170,7 @@ const CardSlider = ({ desertSafari, buggyTours, cityTours }) => {
                         {
                             cityTours.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <Card style={{ width: '20rem' }} className='card-height shadow border border-2 border-danger p-2' onClick={() => handleShow(item)}>
+                                    <Card style={{ width: '20rem' }} className='rounded-4 card-height shadow border border-2 border-danger p-2' onClick={() => handleShow(item)}>
                                         <Card.Img className='card-img' variant="top" src={dummy} />
                                         <Card.Body className='d-flex flex-column align-items-center'>
                                             <Card.Title className='me-auto'>{item.title}</Card.Title>
