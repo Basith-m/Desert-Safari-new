@@ -39,7 +39,7 @@ function Review() {
                 Based on all reviews,
               </Card.Text>
               <a href="#" className="link">
-                See all reviews here
+                Write Your Review
               </a>
             </Card.Body>
           </Card>

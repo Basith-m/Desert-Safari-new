@@ -13,3 +13,14 @@
     text-decoration: none;
     color: rgb(190 97 3);
 }
+
+.footer-badge {
+    display: flex;
+    justify-content: start;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-badge {
+        justify-content: center !important;
+    }
+}
